@@ -15,4 +15,4 @@ jobs:
       - name: Install Dep
         run: poetry install
       - name: Run Tests
-        run: pytest --rootdir=.
+        run: poetry shell && pytest --rootdir=.
