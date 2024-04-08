@@ -1,4 +1,4 @@
-name: Test Project
+name: Deploy Project
 on: push
 jobs:
   test:
@@ -18,3 +18,5 @@ jobs:
         run: poetry install
       - name: Run Tests
         run: pytest --rootdir=.
+  deploy:
+    runs-on: un
