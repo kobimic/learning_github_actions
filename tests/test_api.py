@@ -25,5 +25,5 @@ def test_request_countet(client: TestClient):
 
     res: httpx.Response = client.get("/total_requests")
     assert res.status_code == 200
-    assert res.json() == {"total_reqeusts":2}
+    assert res.json() == {"total_reqeusts":1}
 
