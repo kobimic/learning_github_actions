@@ -18,8 +18,9 @@ jobs:
         run: poetry install
       - name: Run Tests
         run: pytest --rootdir=.
-        
+
   deploy:
+    needs: [test, ]
     runs-on: ubuntu-latest
     steps:
       - name: clone the repo
