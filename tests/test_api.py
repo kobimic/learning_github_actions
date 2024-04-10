@@ -7,6 +7,7 @@ from fastapi.testclient import TestClient
 from main import app
 
 # this is a comment
+# this is another comment
 
 @pytest.fixture()
 def client() -> Generator:
